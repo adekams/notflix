@@ -1,0 +1,171 @@
+body {  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, 
+button {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/netflix.jpg')no-repeat;
+    background-size: cover;
+}
+
+/* header */
+header .flex {
+    padding: 20px 40px 0;
+}
+
+header .sign-up a {
+    background: #E50914;
+    border-radius: 3px;
+    padding: 8px 16px;
+}
+
+header .logo {
+    width: 100px;
+}
+
+
+/* main */
+main.flex {
+    justify-content: center;
+    height: 100vh;   
+}
+
+section.hero {
+    max-width: 85%;
+    margin:  0 auto;
+    text-align: center;
+}
+
+h1.unlimited {
+    font-size: 1.8rem;
+    font-weight: 700;
+    max-width: 650px;
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* form & subscribe */
+form .form-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+form.subscribe .flex {
+    flex-wrap: wrap;  
+}
+
+form.subscribe input {
+    border: 1px solid transparent;
+    color: #000;
+    padding: 10px;
+    width: 100%;
+}
+
+form.subscribe .btn { 
+    border: 1px solid transparent;
+    background: #BB0A12;
+    border: none;
+    font-weight: 400;
+    margin: 15px auto;
+    padding: 10px 20px;
+}
+
+form.subscribe .btn:hover {
+    background: #F40612;
+}
+
+form.subscribe input:focus, 
+form.subscribe .btn:focus {
+    outline: none;
+}
+
+footer {
+    background: #000;
+    border-top: 6px solid #222;
+}
+
+@media screen and (min-width: 740px) {
+    h1.unlimited {
+        font-size: 3.1rem;
+    }
+
+    .hero h3 {
+        font-size: 1.65rem;
+    }
+
+    form .form-description {
+        font-size: 1.2rem;
+        padding: 0 15%;
+    }
+
+    form.subscribe input {
+        padding: 20px;
+    }
+
+    form.subscribe .btn {
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    header .logo {
+        width: 140px;
+    }
+    
+    section.hero {
+        max-width: 650px;
+    }
+
+    form .form-description {
+        padding: 0;
+    }
+
+    form.subscribe input {
+       width: 70%; 
+       border-right-color: rgb(107, 104, 104);
+    }
+
+    form.subscribe .btn {
+        font-size: 26px;
+        width: 30%;
+        margin: auto;
+        padding: 15px 20px;
+    }
+}
